@@ -22,7 +22,7 @@ export default function Navbar() {
     let currentPos = startPos;
 
     function animateMarquee() {
-      currentPos -= 5; // velocidad del movimiento
+      currentPos -= 3; // velocidad del movimiento
       if (currentPos < -marqueeText.offsetWidth) {
         currentPos = startPos; // resetea la posición cuando termina el ciclo
       }
@@ -61,7 +61,11 @@ export default function Navbar() {
               </li>
 
               <li>
-                <Link href={`/cuidados`}>CUIDADOS</Link>
+                <Link href={`/descuentos`}>RULETA DE DESCUENTOS</Link>
+              </li>
+
+              <li>
+                <Link href={`/datos`}>CUIDADOS</Link>
               </li>
               <li>
                 <Link href={`/cambios`}>CAMBIOS</Link>

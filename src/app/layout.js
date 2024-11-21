@@ -5,6 +5,7 @@ import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 import InfoSection from './components/InfoSection';
+import HomeHero from './components/HomeHero';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter'});
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], variable: '--font-poppins'});

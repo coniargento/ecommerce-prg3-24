@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Product from "@/app/models/Product";
 import dbConnect from '@/app/database/dbConnect'
+import Facts from '@/app/models/Fact';
 
 const getAllProducts = async () => {
   try {
@@ -44,4 +45,17 @@ export async function getOneProductDB(id) {
   }
 }
 
+export async function getAllFactsDB() {
+  await dbConnect();
+  try {
+    const facts = await Facts.find().sort({ name: "asc" });
+    return { facts: JSON.parse(JSON.stringify(facts)) };
+  } catch (error) {
+    console.log("Error: ", error.message);
+    return { facts: [], category: null };
+  }
+}
+
 export { getAllProducts, getOneProduct};
+
+
