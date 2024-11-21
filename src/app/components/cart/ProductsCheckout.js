@@ -18,7 +18,7 @@ const ProductsCheckout = () => {
     { descuento: "50% OFF", codigo: "DESC50OFF", type: "percentage", value: 0.50 },
     { descuento: "20% OFF", codigo: "DESC20OFF", type: "percentage", value: 0.20 },
     { descuento: "10% OFF", codigo: "DESC10OFF", type: "percentage", value: 0.10 },
-    { descuento: "$5.000", codigo: "5MILGRATIS", type: "fixed", value: 5000 },
+    { descuento: "$5.000", codigo: "5MILGRATIS", type: "fixed", value: 5000 },  
   ];
 
   // Función para manejar el ingreso del cupón
